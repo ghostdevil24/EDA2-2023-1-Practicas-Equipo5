@@ -2,7 +2,7 @@ import random
 def GenerarNumeros(Arreglo,filas,columnas):
     for i in range(filas):
         for j in range(columnas):
-            Arreglo[i][j]=random.randrange(0,1000)
+            Arreglo[i][j]=random.randrange(0,1001)
             
 def Bubblesort(Arreglo,filas,columnas):
     tam=filas*columnas

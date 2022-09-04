@@ -33,12 +33,12 @@ A=[]
 GenerarNumeros(A)
 pasadas1=bubbleSort(A)
 print("El arreglo de bubbleSort es:")
-print(A,"\nEl número de pasadas para bubbleSort es: ",pasadas1)
+print(A,"\nEl número de pasadas para bubbleSort es: ",pasadas1) #siempre 10 pasadas
 A=[]
 GenerarNumeros(A)
 pasadas2=bubbleSort2(A)
 print("\nEl arreglo de bubbleSort2 es:")
-print(A,"\nEl número de pasadas para bubbleSort2 es: ",pasadas2)
+print(A,"\nEl número de pasadas para bubbleSort2 es: ",pasadas2) #pasadas variables
 
 
 

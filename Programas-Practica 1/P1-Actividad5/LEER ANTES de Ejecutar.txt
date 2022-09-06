@@ -1,6 +1,0 @@
-Aquí les dejo el código para hacer la prueba de escritorio, desconozco
-si hay que hacerla a mano, pero aquí ya lo automaticé, en dado caso copienla a mano
-
-Cabe resaltar que necesitan usar el en entorno de Anaconda y ahi usar spyder
-para ejecutar correctamente el codigo, ya que tiene una dependencia "tabulate"
-para la tabla. 

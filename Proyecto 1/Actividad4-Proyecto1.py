@@ -67,5 +67,4 @@ res=ChecarDiferencias(B, k, pares)
 
 ImprimirMatriz(A1)
 print("Hay",len(res),"pares con una diferencia de",k,"\b, los pares son: ")
-for i in range(len(res)):
-    print(res[i],end=",")
+print(res)

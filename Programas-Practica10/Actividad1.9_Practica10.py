@@ -1,6 +1,10 @@
-archivo=open("archivo.txt","r")
-archivo.seek(5)
-cadena1=archivo.read(5)
-print(cadena1)
-print(archivo.tell())
+import pickle
+lista=["algoritmos 1","algoritmos 2","Esctructuras"]
+archivo =open("materias.dat","wb")
+pickle.dump(lista,archivo)
+archivo.close
+del lista
+archivo= open("materias.dat", "rb")
+lista = pickle.load(archivo)
+print(lista)
 archivo.close

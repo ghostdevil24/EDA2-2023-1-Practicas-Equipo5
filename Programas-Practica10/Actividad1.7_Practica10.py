@@ -5,4 +5,7 @@ print(cadena1+"\n")
 archivo2.write(cadena1+"\n")
 archivo2.write("hola")
 archivo2.write(cadena2)
-archivo2.close
+
+lista=["\n lunes ","martes ","miercoles ","jueves ","viernes "]
+archivo2.writelines(lista)
+archivo2.close()

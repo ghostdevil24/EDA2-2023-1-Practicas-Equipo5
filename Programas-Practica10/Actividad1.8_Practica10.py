@@ -1,4 +1,6 @@
-lista=["lunes","martes","miercoles","jueves","viernes"]
-archivo2=open("datos2.txt","w")
-archivo2.writelines(lista)
-archivo2.close()
+archivo=open("archivo.txt","r")
+archivo.seek(5)
+cadena1=archivo.read(5)
+print(cadena1)
+print(archivo.tell())
+archivo.close

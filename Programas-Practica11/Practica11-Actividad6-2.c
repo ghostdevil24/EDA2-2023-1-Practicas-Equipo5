@@ -34,7 +34,7 @@ void suma(int *A, int *B, int *C){
 		tid = omp_get_thread_num();
 		inicio = tid* (int)10/omp_get_num_threads();
 		fin = (tid+1)*10/omp_get_num_threads()-1;
-		for(i=inicio;i<fin;i++)
+		for(i=inicio;i<=fin;i++)
 		{
 			C[i]=A[i]+B[i];
 			printf("- hilo %d calculo C[%d]= %d\n",tid,i,C[i]);

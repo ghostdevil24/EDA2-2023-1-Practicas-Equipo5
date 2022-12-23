@@ -6,14 +6,7 @@
 void llenaArreglo(int *a);
 void suma(int *a,int *b,int *c);
 
-main(){
-	if(omp_in_parallel()){
-		printf("Este programa esta en paralelo\n");
-	}
-	else{
-		printf("Este programa esta en serie\n");
-	}
-		
+main(){	
 	int max,*a,*b,*c;
 	a=(int *)malloc(sizeof(int)*n);
 	b=(int *)malloc(sizeof(int)*n);
@@ -28,7 +21,7 @@ void llenaArreglo(int *a){
 	for(i=0;i<n;i++)
 	{
 		a[i]=rand()%n;
-		printf("%d\t", a[i]);
+		printf("%d | \t", a[i]);
 	}
 	printf("\n");
 }
@@ -44,11 +37,7 @@ void suma(int *A, int *B, int *C){
 		for(i=inicio;i<fin;i++)
 		{
 			C[i]=A[i]+B[i];
-			printf("hilo %d calculo C[%d]= %d\n",tid,i, C[i]);
+			printf("- hilo %d calculo C[%d]= %d\n",tid,i,C[i]);
 		}
-	}
-	for(i=0;i<n;i++){
-	C[i]=A[i]+B[i];
-	printf("%d\t", C[i]);
 	}
 }
